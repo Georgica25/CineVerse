@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  margin-bottom: 1rem;
+  max-width: 220px;
+  width: 200px;
+}
+
+.card:hover .movie-item-title {
+  color: rgb(202, 4, 4);
+}
+
+.card img {
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.card-rating img:hover :before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #03030059;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.actions {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #c05299;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search-bar-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar-input:focus {
+  border-color: #c05299;
+}
+
+.search-bar-input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Adjust the left position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0a0808; /* Adjust the icon color */
+}
+
+.search-bar-input {
+  padding-left: 30px; /* Ensure enough space for the icon */
+  /* Add other input styles as needed */
+}
+
+.card-rating {
+  position: relative;
+}
+
+.card-rating .rating {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #0a0908;
+  padding: 3px 10px;
+  color: #c05299;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+.trending {
+  margin: 50px 0;
+}
+
+.trending h1 {
+  margin: 15px 0;
+  font-size: 40px;
+}
+
+.movie-details {
+  display: flex;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.movie-details img,
+.movie-details .details {
+  margin: 40px 0;
+}
+
+.movie-details img {
+  border-radius: 10px;
+}
+
+.details h1,
+.details p {
+  margin: 15px 0;
+}
+
+.details h1 {
+  font-size: 55px;
+}
+
+.details p {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.chip {
+  background-color: #c05299;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.movie-item-title {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* font-size: 18px; */
+  margin: 10px 0;
+}
